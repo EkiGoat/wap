@@ -1,0 +1,9 @@
+/*物流信息*/
+.infoLogistics{padding:10px}
+.infoLogistics:after{clear:both;content:"/";height:0;display:block;visibility:hidden}
+.infoLogistics-txt{line-height:24px}
+.infoLogistics-date{color:#9a9a9a;line-height:24px;border-bottom:1px solid #eee;padding-bottom:5px}
+.infoLogistics ul{border-left:2px solid #dcdcdc;margin-left:10px}
+.infoLogistics ul li{padding-left:30px;background-size:10px 10px;background-repeat:no-repeat;background-position:0 7px;margin-left:-6px;margin-bottom:5px;}
+.infoLogistics-icon{background-image:url(../images/Logistics_icon.png)}
+.infoLogistics-now{background-image:url(../images/Logistics_icon_now.png)}

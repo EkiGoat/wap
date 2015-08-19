@@ -1,0 +1,93 @@
+@charset "utf-8";
+/*公共全局*/
+*{margin:0;padding:0;-webkit-tap-highlight-color:rgba(255,0,0,0);}
+body{background:#FFF;}
+.bodyBlock{position: relative;font-size:16px;color:#000;font-family:'微软雅黑',tahoma,arial,'Hiragino Sans GB',\5b8b\4f53,sans-serif;}
+.zoom{zoom:1;}
+.zoom:after{clear:both;content:'.';display:block;height:0;visibility:hidden;overflow:hidden;}
+.inlineBlock{display:inline;float:left;}
+a,input{background-color: none;-webkit-appearance: none; outline: none;}
+ul,li{list-style: none;}
+
+/*logo和banner部分*/
+.banner{width: 100%;margin: 0 auto;position: relative;overflow: hidden;}
+.banner img{width: 100%;margin-top: -5px;float: left;}
+
+/**企业工具**/
+.area3_topnav{position: absolute; right: 16px; top: 18px;  display: block;border: 1px solid #FE4D01;border-radius: 20px; color: #FE4D01;padding: 4px 8px;display: none;text-decoration: none;z-index: 100;}
+
+/*导航部分*/
+.navItems{position: relative;text-align: center;padding-top: 24px;}
+.navTitle{color: #222;}
+.navItems a{display: inline-block;text-decoration: none;width: 70px;background-size: auto 40px;;}
+.navBg{width: 40px;height: 40px;margin: 0 auto;background: url(../images/nav_bg.png) no-repeat center center;    background-size: auto 40px;}
+.nav1 .navBg{background-position: -60px 0;}
+.nav2 .navBg{background-position: -180px 0;}
+.nav3 .navBg{background-position: -300px 0;}
+.nav4 .navBg{background-position: -300px 0;}
+.nav5 .navBg{background-position: -300px 0;}
+.nav6 .navBg{background-position: -300px 0;}
+.navCurrent.nav1 .navBg{background-position: 0px 0;}
+.navCurrent.nav2 .navBg{background-position: -120px 0;}
+.navCurrent.nav3 .navBg{background-position: -240px 0;}
+.navCurrent.nav4 .navBg{background-position: -300px 0;}
+.navCurrent.nav5 .navBg{background-position: -300px 0;}
+.navCurrent.nav6 .navBg{background-position: -300px 0;}
+.navCurrent .navTitle{font-weight:bold;color:#222;}
+
+/*内容部分*/
+.content{width: 100%;margin: 0 auto; margin-top: 32px;}
+.area{width: 100%;margin: 0 auto;position: relative;display: none;}
+.areaDetail{width: 90%; margin: 0 auto;margin-bottom: 24px;position: relative;}
+.input{width:100%;-webkit-appearance:none;height: 42px;font-size: 16px;border-radius: 6px;color: #FFFFFF;overflow: hidden;position: relative;/* border: 1px solid #aaa; */background: #7D0000;}
+.itemInput,.itemInput:focus{-webkit-appearance:none;width: 260px; color: #FFFFFF; border: none; padding: 6px 12px;border-radius: 6px;height: 32px; font-size: 16px; background: none;}
+
+/*查看更多按钮*/
+.area3more{display: none;}
+.showMore{margin: 16px 5%;text-align: right;color: #FA917A;/*background: url(../images/showmore_bg.png) no-repeat 95% center;background-size: 20px;*/height: 24px;}
+.showMoreBg{width: 21px;margin-bottom: -5px;margin-left: 2px;}
+.claerbottm{border-bottom: 0!important;}
+
+/*17+4验正码指示动图*/
+.codeGuide{position: absolute; display: none; right: 10px;top: -188px;width: 180px;height: 200px;z-index: 100;background: url(../images/gif_bg.png) no-repeat 0 0;background-size:100% 100% ;/* padding-top: 17px; */text-align: center;}
+.codeGuidePic{width: 100%;}
+
+/*输入框清空*/
+.searchPicRight{display: none; width: 42px;height: 42px;position: absolute;right: 0; top:0;background:url(../images/searchPicRight.png) no-repeat center center;background-size: 20px 20px;}
+
+/*新的输入框 4位验证码*/
+.leftCode{float: left;width: 164px;-webkit-appearance:none; color: #FFFFFF; border: none; background-color: #7D0000;padding: 6px;padding-left: 12px;height: 32px; font-size: 16px;border-radius:0}
+.rightCode{float: right;width: 85px;-webkit-appearance:none;color: #FFFFFF; border: none; padding: 6px;padding-right: 12px;height: 32px; font-size: 16px; background-color: #D3211F;border-radius:0;/* border-left: 1px solid #aaa; */}
+/*placeholder提示字体颜色*/
+input::-moz-placeholder { color: #FFFFFF; }
+input::-webkit-input-placeholder { color:#FFFFFF; }
+input:-ms-input-placeholder { color:#FFFFFF; }
+
+/*验证码*/
+.verifyIpunt{width: 116px; float: left; -webkit-appearance:none;height: 42px;/* border: 1px solid #aaa; */background:#7D0000;font-size: 16px;border-radius: 6px;color: #FFFFFF;overflow: hidden;}
+.verifyCode,.verifyCode:active,.verifyCode:hover{-webkit-appearance:none;width:93%;  border: none; padding:6px 12px;border-radius: 6px;height: 32px; font-size: 16px;color: #FFFFFF; background: none;}
+.verifyBox{width: 116px;float: right;height: 42px; outline:none;/* border: 1px solid #aaa; */border-radius:6px;background: #D3211F;}
+.verifyPic{width: 116px; height: 42px;border-radius:6px; border: none;}
+
+/*查询*/
+.search{width: 90%; height: 44px;line-height: 44px;margin:0 auto;margin-top: 24px;}
+.searchTitle{width: 100%; height: 44px;line-height: 44px;display: block;border-radius: 5px;/* border: 1px solid #FFF; */font-size: 20px;/*letter-spacing:8px;*/text-decoration: none;color: #FFFFFF;text-align: center;background: #7D0000;}
+
+/*底部*/
+.footer{width:100%;padding:12px 0;margin-top: 30px;text-align:center;font-size: 12px;font-family:"微软雅黑";color: #838383;}
+.footer a{color: #838383;text-decoration: none;}
+
+/**提示框**/
+.alert{width:300px;background:#FFFFFF;border-radius:10px;position:fixed;top:50%;left:50%;margin-top:-60px;margin-left:-150px;cursor:pointer;z-index:100;overflow: hidden;}
+.alert-bg{width:100%;height:100%;background:#000; opacity:0.5;position:fixed;top:0;left:0;z-index:99}
+.alert-txt{color:#FF4D00;padding:30px 20px;text-align:center;font-size:20px;font-family: "微软雅黑";}
+.alert-button{color:#fff;height:50px;line-height:50px;text-align:center;border-top:1px solid #fff;font-family: "微软雅黑";font-size:20px;background: #FF4D00;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;}
+.alertBlue .alert-txt{color: #7D0000;}
+.alertBlue .alert-button{background: #7D0000;}
+
+/*微信模块*/
+.wechat{margin: 24px 0;}
+.wechatPic{float: left;width: 40%;margin-left: 10%;}
+.wechatPic img{width: 100%;}
+.wechatTip{float: right;margin: 15% 10% 0 0;width: 40%;text-align: center;color: #008ff9;}
+

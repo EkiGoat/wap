@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="format-detection" content="telephone=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/base.css" />
+		<script type="text/javascript" src="js/config.js"></script>
+	</head>
+
+	<body>
+		<div class="bodyBlock">
+			<div class="banner zoom">
+				<img src="images/banner.jpg" />
+			</div>
+			<!--
+            	作者：1485267954@qq.com
+            	时间：2015-07-15
+            	描述：end banner
+            -->
+
+			<div class="navItems zoom">
+				<a class="nav1 navCurrent">
+					<p class="navBg">&nbsp;</p>
+					<p class="navTitle">防伪查询</p>
+				</a>
+				<a class="nav2">
+					<p class="navBg">&nbsp;</p>
+					<p class="navTitle">物流查询</p>
+				</a>
+				<a class="nav3">
+					<p class="navBg">&nbsp;</p>
+					<p class="navTitle">积分充值</p>
+				</a>
+				<a class="nav4">
+					<p class="navBg">&nbsp;</p>
+					<p class="navTitle">积分查询</p>
+				</a>
+                <br /><br />
+				<a class="nav5">
+					<p class="navBg">&nbsp;</p>
+					<p class="navTitle">溯源查询</p>
+				</a>
+				<a class="nav6"> 
+					<p class="navBg">&nbsp;</p>
+					<p class="navTitle">微信关注</p>
+				</a>
+			</div>
+			<!--
+            	作者：1485267954@qq.com
+            	时间：2015-07-15
+            	描述：end 导航
+            -->
+
+			<div class="content">
+				<!--begin 防伪查询-->
+				<div class="area area1">
+					<div class="areaDetail" id="AntiPanel" runat="server">
+						<div id="securityInptBox" class="input securityInptBox">
+							<input type="text" class="itemInput" maxlength="22" placeholder="请输入防伪溯源码" id="AntiCode" runat="server" />
+							<span class="searchPicRight"></span>
+						</div>
+					</div>
+					<div class="areaDetail zoom" id="AntiVPanel" runat="server" style="display:none">
+						<div class="codeGuide">
+							<img class="codeGuidePic" src="images/codeGuide_9.gif" />
+						</div>
+						<div class="input securityInptBox">
+							<input type="text" class="leftCode" maxlength="17" value="" readonly="readOnly" id="AntiVCode" runat="server" />
+							<input type="text" class="rightCode" maxlength="4" placeholder="+4位验正码" id="AntiRightCode" runat="server" />
+						</div>
+					</div>
+					<!--end 防伪码，两种输入框选择一种-->
+					<div class="areaDetail zoom" id="AntiVerifyPanel" runat="server" style="display: none;">
+						<div class="verifyIpunt">
+							<input class="verifyCode" id="verifyCode" type="text" maxlength="4" placeholder="输入右侧4位数字" />
+						</div>
+						<div class="verifyBox">
+							<img alt class="verifyPic" id="verifyPic" src="img" onerror="javascript:this.src=wap_config.get_validate_code();" onclick="javascript:this.src=wap_config.get_validate_code();" />
+						</div>
+					</div>
+					<!--end 验证码-->
+					<div class="search">
+						<a class="searchTitle" id="antiFakeQuery">查询</a>
+					</div>
+					<!--end 防伪查询按钮-->
+				</div>
+				<!--
+                	作者：1485267954@qq.com
+                	时间：2015-07-15
+                	描述：end 防伪查询
+                -->
+
+				<!--begin 物流查询-->
+				<div class="area area2">
+					<div class="areaDetail" id="LoginNamePanel">
+						<div class="input securityInptBox">
+							<input id="LoginName" runat="server" type="text" class="itemInput" maxlength="50" placeholder="请输入用户名" />
+							<span class="searchPicRight"></span>
+						</div>
+					</div>
+					<div class="areaDetail" id="PasswordPanel">
+						<div class="input securityInptBox">
+							<input id="Password" runat="server" type="password" class="itemInput" maxlength="18" placeholder="请输入密码" />
+							<span class="searchPicRight"></span>
+						</div>
+					</div>
+					<div class="areaDetail">
+						<div class="input securityInptBox">
+							<input id="LogisticsCode" type="text" class="itemInput" maxlength="18" placeholder="请输入物流码" runat="server" />
+							<span class="searchPicRight"></span>
+						</div>
+					</div>
+					<!--end 物流码-->
+					<div class="search">
+						<a class="searchTitle" id="logisticsQuery">查 询</a>
+					</div>
+					<!--end 查询按钮-->
+				</div>
+				<!--
+                	作者：1485267954@qq.com
+                	时间：2015-07-15
+                	描述：end 物流查询
+                -->
+
+				<!--begin 积分充值-->
+				<div class="area area3">
+					<div class="areaDetail">
+						<div class="input securityInptBox">
+							<input type="text" id="Mobile" runat="server" class="itemInput" maxlength="11" placeholder="请输入您的手机号" />
+							<span class="searchPicRight"></span>
+						</div>
+					</div>
+					<div class="areaDetail" id="IntegratePanel" runat="server">
+						<div class="input securityInptBox">
+							<input type="text" class="itemInput" maxlength="22" placeholder="请输入积分码" id="IntegrateCode" runat="server" />
+							<span class="searchPicRight"></span>
+						</div>
+					</div>
+					<div class="areaDetail zoom" id="IntegrateVPanel" runat="server" style="display:none">
+						<div class="input securityInptBox">
+							<input type="text" class="leftCode" maxlength="17" value="" readonly="readOnly" id="IntegrateVCode" runat="server" />
+							<input type="text" class="rightCode" maxlength="4" placeholder="+4位验正码" id="IntegrateRightCode" runat="server" />
+						</div>
+					</div>
+					<!--end 积分码-->
+					<div class="search">
+						<a class="searchTitle" id="integrateCredit">充 值</a>
+					</div>
+					<!--end 充值按钮-->
+				</div>
+				<!--
+                	作者：1485267954@qq.com
+                	时间：2015-07-15
+                	描述：end 积分充值
+                -->
+
+				<!--begin 积分查询 -->
+				<div class="area area4">
+					<div id="LoginPanel">
+						<div class="areaDetail">
+							<div class="input securityInptBox">
+								<input id="jifen_LoginName" runat="server" type="text" class="itemInput" maxlength="11" placeholder="请输入您的手机号" />
+								<span class="searchPicRight"></span>
+							</div>
+						</div>
+						<div class="areaDetail">
+							<div class="input securityInptBox">
+								<input id="jifen_Password" runat="server" type="password" class="itemInput" maxlength="18" placeholder="请输入密码" />
+								<span class="searchPicRight"></span>
+							</div>
+						</div>
+						<div class="search">
+							<a class="searchTitle" id="userLogin">查 询</a>
+						</div>
+					</div>
+					<div id="LoginedPanel" style="display:none">
+						<div class="search">
+							<a class="searchTitle" id="currentUser"></a>
+						</div>
+						<div class="search">
+							<a class="searchTitle" id="changeUser">更换帐号</a>
+						</div>
+					</div>
+				</div>
+				<!--
+                	作者：1485267954@qq.com
+                	时间：2015-07-15
+                	描述：end 积分查询
+                -->
+
+				<!--begin 溯源查询 -->
+				<div class="area area5">
+					<div class="areaDetail">
+						<div id="securityInptBox" class="input securityInptBox">
+							<input id="TraceCode" runat="server" type="text" class="itemInput" maxlength="22" placeholder="请输入溯源码" />
+							<span class="searchPicRight"></span>
+						</div>
+					</div>
+					<!--end 溯源查询-->
+					<div class="search">
+						<a class="searchTitle" id="traceQuery">查 询</a>
+					</div>
+				</div>
+				<!--
+                	作者：1485267954@qq.com
+                	时间：2015-07-15
+                	描述：end 溯源查询
+                -->
+
+				<!--begin 微信关注 -->
+				<div class="area area6">
+					<div class="wechat zoom">
+						<div class="wechatPic">
+							<img src="images/wechatPic.jpg" alt="" />
+						</div>
+						<div class="wechatTip">微信长按二维码<br />关注官方公众号</div>
+					</div>
+				</div>
+				<!--
+                	作者：1485267954@qq.com
+                	时间：2015-07-15
+                	描述：end 微信关注
+                -->
+			</div>
+			<!--
+            	作者：1485267954@qq.com
+            	时间：2015-07-15
+            	描述：end content
+            -->
+
+			<div class="footer">
+				技术架构：<a href="http://www.app315.net">甲骨文科技</a> 版权所有
+				<br /> Copyright 2005-2020 All Reserved
+			</div>
+			<!--
+            	作者：1485267954@qq.com
+            	时间：2015-07-15
+            	描述：end footer
+            -->
+
+			<input type="hidden" enableviewstate="false" id="MessagePanel" runat="server" />
+			<input type="hidden" enableviewstate="false" id="DefinedCorpID" runat="server" />
+			<input type="hidden" enableviewstate="false" id="IsLogined" runat="server" />
+			<!--
+            	作者：1485267954@qq.com
+            	时间：2015-07-15
+            	描述：end hidden button
+            -->
+		</div>
+		<!--
+        	作者：1485267954@qq.com
+        	时间：2015-07-15
+        	描述：end bodyBlock
+        -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/json2.js"></script>
+		<script type="text/javascript" src="js/autoBrowser.js"></script>
+		<script type="text/javascript" src="js/base.js"></script>
+		<script type="text/javascript" src="http://tajs.qq.com/stats?sId=44115147" charset="UTF-8"></script>
+		<script type="text/javascript" src="js/FormSubmit.js"></script>
+		<script type="text/javascript" src="js/public.js" charset="utf-8"></script>
+	</body>
+</html>

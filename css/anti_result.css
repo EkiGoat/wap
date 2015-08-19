@@ -1,0 +1,71 @@
+@charset "utf-8";
+*{margin:0;padding:0;font-size:16px;font-family:"微软雅黑";color: #000;-webkit-tap-highlight-color:rgba(255,0,0,0);}
+img{border:0;}
+ul{list-style:none;}
+a{color:#333;text-decoration:none;cursor:pointer}
+a:hover{text-decoration:none}
+body{background:#eeeeee}
+input{outline:none}
+
+/**顶部**/
+.anti_result_verification{background:#fff}
+.anti_result_verification-img{width:100%;background:#55e3a8;text-align:center;padding:10% 0}
+.anti_result_verification-img img{width:45%}
+.anti_result_verification-txt{padding:10px;text-indent:1em;line-height:20px;word-break:break-all;}
+
+/**客服直线**/
+.anti_result_serve{width:96%;margin:15px auto;border-radius:5px;background:#fff}
+.anti_result_serve a{width:100%;height:60px;line-height:60px;display:block;text-align:center}
+.anti_result_serve a span{height:60px;line-height:60px;display:inline-block;background:url(../Images/anti_result_tel.png) no-repeat 0 center;background-size:25px 25px;padding-left:30px}
+
+/*真伪信息*/
+.anti_result_TrueFalse{padding:25px 10px 10px;border-bottom: 1px solid #eee;}
+.anti_result_TrueFalse:after{clear:both;content:"/";height:0;display:block;visibility:hidden}
+.anti_result_TrueFalse-left{width:30%;margin:0 0 0 5%;float:left}
+.anti_result_TrueFalse-left img{width:100%}
+.anti_result_TrueFalse-right{width:55%;float:right}
+.anti_result_TrueFalse-box{margin-bottom:5%}
+.anti_result_TrueFalse-box span{display:block}
+.anti_result_TrueFalse-box-title{color:#949494;font-size:14px}
+.anti_result_TrueFalse-box-content{font-size:16px}
+.anti_result_Tip{color:#F60;font-size: 14px;padding: 6px 0;text-indent: 2em;background: url(../Images/warn.png) no-repeat 8px 6px;background-size: 16px;}
+
+/*历史查询*/
+.historyList{position: relative;width: 100%;height: 52px;border-bottom: 1px solid #eee;}
+.historyImg{position: absolute;width: 80px;left: 0;top: 10px;border: 1px solid #C6C6C6;}
+.historyDetail{/* margin-left: 100px; *//* margin-top: 9px; */padding: 6px 0;}
+.historyTime{color: #000;font-size: 14px;/* margin-top: 18px; */}
+.historyTime .historyAddress{padding-left:32px}
+.card_item p.historyNum{color: #999999;font-size: 14px;}
+.goIcon{position: absolute;right: 0px;top: 50%;margin-top: -10px;}
+.historyMore{width: 100%;text-align: center;height: 42px;background: url(../images/more_bg.png) no-repeat center 37px;color: #7d7d7d;padding: 10px 0;}
+.historyListHide{height:52px;line-height: 42px;text-align: center;color: #999999;}
+.hideLogo{color: #999;transform: rotate(90deg);display: inline-block;}
+.historyHideNum{color:#999}
+
+/*猜你喜欢*/
+.anti_result_guessLike{width:96%;margin:10px auto 0 auto}
+.anti_result_guessLike-title{margin:20px 0 10px 0;padding-left:10px}
+.anti_result_guessLike-content{width:100%;height:auto;overflow:hidden}
+.swiper-container{width:100%;height:300px;text-align:left;}
+.swiper-slide{width:1520px}
+.swiper-slide:after{clear:both;content:"/";height:0;display:block;visibility:hidden}
+.swiper-scrollbar{width:100%;height:4px;position:absolute;left:0;bottom:0px;z-index:1;}
+.anti_result_guessItem{float:left;margin-right:10px;background:#fff;border-radius:5px}
+.anti_result_guessItem-img{text-align:center;}
+.anti_result_guessItem-img img{border-top-left-radius:5px;border-top-right-radius:5px}
+.anti_result_guessItem-txt{width:90px;height:40px;line-height:20px;overflow:hidden;margin-right:5%;color:#838383;font-size:14px;margin:5px 0;padding:0 5px}
+.anti_result_guessItem-money{height:30px;line-height:30px;color:#ff4c00;font-weight:bold;border-top:1px solid #eee;padding-left:5px}
+.anti_result_guessLike-hidden{width:47%}
+anti_result_.guessLike-hidden img{width:100%}
+
+/*图片垂直居中*/
+.verticalAlign{ vertical-align:middle; display:inline-block; height:100%; width:1px; margin-left:-1px;}
+.textSpan{vertical-align:middle;}
+
+/*页脚*/
+.anti_result_footer{width:100%;padding:12px 0;text-align:center;line-height:24px;font-size:14px;font-family:"微软雅黑";color:#b9b9b9}
+.anti_result_footer a{font-size:14px;color:#b9b9b9}
+
+/*另外添加 修复出现的各种问题*/
+.anti_result_TrueFalse-box span.anti_result_extraToFix{text-indent:0;}

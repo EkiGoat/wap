@@ -1,0 +1,71 @@
+@charset "utf-8";
+/*公共全局*/
+*{margin:0;padding:0;-webkit-tap-highlight-color:rgba(255,0,0,0);}
+body{background:#fff;}
+.bodyBlock{position: relative;font-size:16px;color:#000;font-family:'微软雅黑',tahoma,arial,'Hiragino Sans GB',\5b8b\4f53,sans-serif;background: #EEEEEE}
+.zoom{zoom:1;}
+.zoom:after{clear:both;content:'.';display:block;height: 0;visibility:hidden;overflow:hidden;}
+.inlineBlock{display:inline;float:left;}
+a,input{background-color: none;-webkit-appearance: none; outline: none;}
+ul,li{list-style: none;padding: 0;margin: 0;}
+
+
+/**积分充值top**/
+.top{padding: 10px;background: #03A9F5;color: #FFFFFF;}
+.coName{font-size: 17px;}
+.bolderTitle{text-align: center;font-size: 20px;}
+.intUsable{text-align: center;}
+.intNum{width: 150px;height: 150px;line-height: 150px;text-align: center;margin: 0 auto;background: url(../images/int_bg.png) no-repeat center center;background-size: 150px 150px;overflow: hidden;margin-top: 20px;font-size: 32px;}
+.intBox{width: 300px;margin: 0 auto;position: relative;border-bottom: 1px solid #7DD3F9;padding: 16px 0;}
+.intBox p{text-overflow: ellipsis;	white-space: nowrap;/*禁止自动换行*/	overflow: hidden;}
+.intBoxleft{float: left;width: 150px;text-align: center;}
+.intBoxRight{float: right;width: 150px;text-align: center;}
+.intBoxBorder{position: absolute;left: 50%;top: 25px;height: 36px;background: #7DD3F9;width: 1px;}
+.firstRegisterTitle{text-align: center;}
+.firstRegister{padding-top: 16px;}
+.smallTitle{width: 300px;margin: 10px auto;}
+
+/**积分充值**/
+.content{background: white;}
+.intDetail,.gift{margin:0 5%;padding-top: 10px;}
+.detailTitle{color: #7D7D7D;margin: 5px 0 5px 0;}
+.detailList p{color: #3E3E3E;font-size: 14px;/* line-height: 1.6; */text-overflow: ellipsis;   white-space: nowrap;/*禁止自动换行*/   overflow: hidden;}
+.detailList p .detailInfo{color: #7D7D7D;}
+.dateTime{text-align: right; color: #7D7D7D;/* margin: 3px 0; */font-size: 13px;}
+.date{margin-right: 10px;}
+
+/**兑换列表**/
+.intDetailList{position: relative;height: 100px;border-bottom: 1px solid #eee;padding: 10px 0 0 28px;float: inherit;}
+#IntegrateRecordList .intDetailList{height: 84px;}
+.listNum{position: absolute;left: 0;height: 65px;line-height: 65px;width: 20px;color: #7d7d7d;}
+.giftList{position: relative;width: 100%;height: 100px;border-bottom: 1px solid #eee;}
+.giftImg{position: absolute;width: 80px;height: 80px;left: 0;top: 10px;border: 1px solid #C6C6C6;overflow: hidden;}
+.giftImg_img{width:100%}
+.giftDetail{margin-left: 100px;/* margin-top: 9px; */padding-top: 22px;}
+.giftNum{color: #7D7D7D;font-size: 14px;margin-top: 18px;}
+.giftNum span{color: #FF4E02;}
+.goIcon{position: absolute;right: 0px;top: 50%;margin-top: -10px;}
+.more{width: 100%;text-align: center;height: 42px;background: url(../images/more_bg.png) no-repeat center 37px;color: #7d7d7d;padding: 10px 0;}
+.shangcheng{margin:0 3%;margin-top: 10px;background: #FFFFFF;height: 50px;line-height: 50px;border-radius: 6px;text-align: center;}
+.shangchengLink{text-decoration: none;color: #696969;width: 97px;margin:0 auto;padding-left: 44px;display: block;background: url(../images/shangcheng_bg.png) no-repeat 0 center;background-size: 32px 32px;}
+
+/*猜你喜欢*/
+.guessLike{width:96%;margin:10px auto 0 auto}
+.guessLike-title{margin:20px 0 10px 0;padding-left:10px}
+.guessLike-content{width:100%;height:auto;overflow:hidden}
+.swiper-container{width:100%;height:300px;text-align:left;}
+.swiper-slide{width:1520px}
+.swiper-slide:after{clear:both;content:"/";height:0;display:block;visibility:hidden}
+.swiper-scrollbar{width:100%;height:4px;position:absolute;left:0;bottom:0px;z-index:1;}
+.guessItem{float:left;margin-right:10px;background:#fff;border-radius:5px;padding-top: 20px;}
+.guessItem-img{text-align:center;}
+.guessItem-img img{border-top-left-radius:5px;border-top-right-radius:5px}
+.guessItem-txt{width:90px;height:40px;line-height:20px;overflow:hidden;margin-right:5%;color:#838383;font-size:14px;margin:5px 0;padding:0 5px}
+.guessItem-money{height:30px;line-height:30px;color:#ff4c00;font-weight:bold;border-top:1px solid #eee;padding-left:5px}
+.guessLike-hidden{width:47%}
+.guessLike-hidden img{width:100%}
+.Shadow{box-shadow: 1.5px 2.598px 5px 0px rgba(0, 0, 0, 0.118);}
+
+/*底部*/
+.footer{width:100%;padding:12px 0;margin-top: 30px;text-align:center;line-height:24px;font-size: 12px;font-family:"微软雅黑";color: #c6c6c6;}
+.footer a{font-size:14px;color:#b9b9b9;text-decoration: none;}
